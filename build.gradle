@@ -21,3 +21,15 @@ allprojects {
         maven { url 'https://clojars.org/repo' }
     }
 }
+
+
+plugins {
+  id "org.sonarqube" version "5.0.0.4638"
+}
+
+sonar {
+  properties {
+    property "sonar.projectKey", "ytdld"
+    property "sonar.projectName", "ytdld"
+  }
+}
